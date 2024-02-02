@@ -11,25 +11,26 @@
     tay     ; Save first digit
     txa     ; Get initial value
     and     #%00110000
-    
+
     lsr
-    lsr 
+    lsr
     lsr
     lsr
 
     tax
     tya
     beq     @skip
-@loop:    
+
+@loop:
     clc
     adc     #10
     dex
     bne     @loop
     ldx     #$00
     rts
-    
+
 @skip:
     ldx     #$00
-    tya     ; Return number    
+    tya     ; Return number
     rts
 .endproc

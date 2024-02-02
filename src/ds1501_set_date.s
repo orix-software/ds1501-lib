@@ -30,10 +30,8 @@
 
 @skip:
     tya
-    sta     DS1501_DATE_REGISTER    
-     
+    sta     DS1501_DATE_REGISTER
+
     jmp     _ds1501_lock_te
- 
-    
-    
+
 .endproc

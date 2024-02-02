@@ -12,6 +12,6 @@
     tay ; save
     jsr     _ds1501_unlock_te
     tya
-    sta     DS1501_MONTH_REGISTER    
+    sta     DS1501_MONTH_REGISTER
     jmp     _ds1501_lock_te
  .endproc

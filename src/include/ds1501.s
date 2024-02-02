@@ -20,3 +20,9 @@
 
 .define DS1501_RAM_ADDRESS                     $370
 .define DS1501_RAM_DATE                        $373
+
+.define DS1501_CRISTAL_CAPACITANCE_12_5PF      64
+.define DS1501_CRISTAL_CAPACITANCE_6PF         0
+
+.define DS1501_BATTERY_LEVEL_FULL              0
+.define DS1501_BATTERY_LEVEL_EMPTY             128

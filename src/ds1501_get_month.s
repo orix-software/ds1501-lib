@@ -5,21 +5,25 @@
 ; Modify a,x,y
 
 .proc _ds1501_get_month
-
+    ;;@brief Get month
+    ;;@modifyA
+    ;;@modifyX
+    ;;@returnA Month
     lda     DS1501_MONTH_REGISTER
     tax
     and     #%00010000
     cmp     #%00010000
     beq     @add
-    
+
     txa
     ldx     #$00
     rts
-@add:    
+
+@add:
     txa
     clc
     adc     #10
     ldx     #$00
-    
+
     rts
 .endproc
