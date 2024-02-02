@@ -1,10 +1,14 @@
 .include "include/ds1501.s"
 
 .export _ds1501_get_date
+.export ds1501_get_date
 
 ; Modify a,x,y
 
 .proc _ds1501_get_date
+.endproc
+
+.proc ds1501_get_date
     lda     DS1501_DATE_REGISTER
     tax     ; save
     and     #%00001111

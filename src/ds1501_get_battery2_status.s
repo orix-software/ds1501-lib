@@ -11,7 +11,7 @@
 .proc ds1501_get_battery2_status
     ;;@brief Get battery2 status
     ;;@modifyA
-    ;;@returnA DS1501_BATTERY_LEVEL_FULL or DS1501_BATTERY_LEVEL_EMPTY
+    ;;@returnsA DS1501_BATTERY_LEVEL_FULL or DS1501_BATTERY_LEVEL_EMPTY
     lda     DS1501_CTRLA_REGISTER
     and     #%01000000
     asl     ; In order to have 128 if it's full

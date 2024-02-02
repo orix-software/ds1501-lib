@@ -1,6 +1,18 @@
 # C
 
+## unsigned char ds1501_get_battery1_status();
 
+***Description***
+
+Get battery1 status
+
+
+
+## unsigned char ds1501_get_battery2_status();
+
+***Description***
+
+Get battery2 status
 
 
 
@@ -24,6 +36,8 @@ Get minutes
 
 
 
+## unsigned char ds1501_get_month();
+
 ***Description***
 
 Get month
@@ -39,6 +53,12 @@ Get seconds
 
 
 
+
+## void ds1501_lock_te()
+
+***Description***
+
+Set Write bit (TE)
 
 
 
@@ -57,6 +77,12 @@ Set cristal capacitance.
 
 
 
+
+## void ds1501_unlock_te()
+
+***Description***
+
+Disable Write bit (TE)
 
 
 

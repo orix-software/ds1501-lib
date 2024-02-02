@@ -10,8 +10,11 @@ Get battery1 status
 ***Modify***
 
 * Accumulator 
-* X Register 
-* Y Register 
+
+***Returns***
+
+* Accumulator : DS1501_BATTERY_LEVEL_FULL or DS1501_BATTERY_LEVEL_EMPTY
+
 
 
 ## ds1501_get_battery2_status
@@ -24,6 +27,19 @@ Get battery2 status
 ***Modify***
 
 * Accumulator 
+
+***Returns***
+
+* Accumulator : DS1501_BATTERY_LEVEL_FULL or DS1501_BATTERY_LEVEL_EMPTY
+
+
+
+## ds1501_get_date
+
+
+
+## ds1501_get_day
+
 
 
 ## ds1501_get_hour
@@ -52,6 +68,19 @@ Get minutes
 * Accumulator 
 * X Register 
 * Y Register 
+
+
+## ds1501_get_month
+
+***Description***
+
+Get month
+
+
+***Modify***
+
+* Accumulator 
+* X Register 
 
 
 ## ds1501_get_year
