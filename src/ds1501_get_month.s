@@ -8,6 +8,7 @@
 .proc _ds1501_get_month
     ;;@proto unsigned char ds1501_get_month();
     ;;@brief Get month
+    ;;@returns Month
 .endproc
 
 .proc ds1501_get_month

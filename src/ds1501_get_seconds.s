@@ -2,9 +2,15 @@
 
 .export _ds1501_get_seconds
 
+.proc _ds1501_get_seconds
+    ;;@proto unsigned char ds1501_get_seconds();
+    ;;@brief Get seconds
+    ;;@returns Seconds
+.endproc
+
 ; Modify a,x,y
 
-.proc _ds1501_get_seconds
+.proc ds1501_get_seconds
     ;;@brief Get seconds
     ;;@modifyA
     ;;@modifyX

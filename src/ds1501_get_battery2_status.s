@@ -6,6 +6,7 @@
 .proc _ds1501_get_battery2_status
     ;;@proto unsigned char ds1501_get_battery2_status();
     ;;@brief Get battery2 status
+    ;;@returns Battery2 status
 .endproc
 
 .proc ds1501_get_battery2_status

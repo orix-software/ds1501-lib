@@ -6,9 +6,15 @@
 ; Modify a,x,y
 
 .proc _ds1501_get_date
+    ;;@proto unsigned char ds1501_get_date();
+    ;;@brief Get date (the day in the month 1-31)
 .endproc
 
 .proc ds1501_get_date
+    ;;@brief Get date (the day in the month 1-31)
+    ;;@modifyA
+    ;;@modifyX
+    ;;@returnsA The day
     lda     DS1501_DATE_REGISTER
     tax     ; save
     and     #%00001111
@@ -20,6 +26,7 @@
     lsr
     lsr
     lsr
+    ; At this step A contains the number *10 : 000000XX
 
     tax
     tya

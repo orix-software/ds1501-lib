@@ -36,9 +36,32 @@ Get battery2 status
 
 ## ds1501_get_date
 
+***Description***
+
+Get date (the day in the month 1-31)
+
+
+***Modify***
+
+* Accumulator 
+* X Register 
+
+***Returns***
+
+* Accumulator : The day
+
 
 
 ## ds1501_get_day
+
+***Description***
+
+Get the day of the week (1-7)
+
+
+***Returns***
+
+* Accumulator : Returns Get the day of the week (1-7)
 
 
 
@@ -83,11 +106,38 @@ Get month
 * X Register 
 
 
+## ds1501_get_seconds
+
+***Description***
+
+Get seconds
+
+
+***Modify***
+
+* Accumulator 
+* X Register 
+
+
+## ds1501_get_time
+
+***Description***
+
+Get time : hh mm ss
+
+
+***Modify***
+
+* Accumulator 
+* X Register 
+* Y Register 
+
+
 ## ds1501_get_year
 
 ***Description***
 
-Get year
+Get year (0 to 99)
 
 
 ***Modify***

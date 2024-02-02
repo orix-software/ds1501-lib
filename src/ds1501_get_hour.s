@@ -9,6 +9,7 @@
 .proc _ds1501_get_hour
     ;;@proto unsigned char ds1501_get_hour();
     ;;@brief Get hour
+    ;;@returns Hour
 .endproc
 
 .proc ds1501_get_hour

@@ -5,14 +5,16 @@
 
 
 .proc _ds1501_get_year
+    ;;@int      ds1501_get_year();
+    ;;@brief Get year (0 to 99)
 .endproc
 
 .proc ds1501_get_year
-    ;;@brief Get year
+    ;;@brief Get year (0 to 99)
     ;;@modifyA
     ;;@modifyX
     ;;@modifyY
-    ;;@returnA Year
+    ;;@returnA Year (0 to 99)
     ldx     #$00
     lda     DS1501_YEAR_REGISTER
     and     #%00001111

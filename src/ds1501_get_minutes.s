@@ -8,6 +8,7 @@
 .proc _ds1501_get_minutes
     ;;@proto unsigned char ds1501_get_minutes();
     ;;@brief Get minutes
+    ;;@returns Minutes
 .endproc
 
 .proc ds1501_get_minutes

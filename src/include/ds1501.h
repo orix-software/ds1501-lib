@@ -20,3 +20,14 @@ void          ds1501_set_date(unsigned char date);
 unsigned char ds1501_get_battery1_status();
 unsigned char ds1501_get_battery2_status();
 void          ds1501_set_cristal_capacitance(unsigned char capacitance);
+long int      ds1501_get_time();
+
+
+/*Alarms*/
+
+void          ds1501_set_seconds_alarm(unsigned int seconds);
+void          ds1501_set_minutes_alarm(unsigned int minutes);
+void          ds1501_set_hours_alarm(unsigned int hours);
+
+void          ds1501_set_day_alarm(unsigned int day);
+void          ds1501_set_date_alarm(unsigned int date);
