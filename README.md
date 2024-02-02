@@ -1,5 +1,7 @@
 # DS1501 driver for 6502
 
+[![build](https://github.com/orix-software/ds1501lib/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/orix-software/ds1501lib/actions/workflows/main.yml)
+
 Lib for cc65, used with twilighte board.
 
 DS1501 is a RTC
