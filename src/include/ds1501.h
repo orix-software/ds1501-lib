@@ -25,9 +25,9 @@ long int      ds1501_get_time();
 
 /*Alarms*/
 
-void          ds1501_set_seconds_alarm(unsigned int seconds);
-void          ds1501_set_minutes_alarm(unsigned int minutes);
-void          ds1501_set_hours_alarm(unsigned int hours);
+void          ds1501_set_seconds_alarm(unsigned char seconds);
+void          ds1501_set_minutes_alarm(unsigned char minutes);
+void          ds1501_set_hours_alarm(unsigned char hours);
 
-void          ds1501_set_day_alarm(unsigned int day);
-void          ds1501_set_date_alarm(unsigned int date);
+void          ds1501_set_day_alarm(unsigned char day);
+void          ds1501_set_date_alarm(unsigned char date);

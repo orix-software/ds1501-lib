@@ -5,7 +5,9 @@
 
 
 .proc _ds1501_set_minutes_alarm
+    ;;@proto void          ds1501_set_minutes_alarm(unsigned char minutes);
 .endproc
 
 .proc ds1501_set_minutes_alarm
+    rts
 .endproc

@@ -117,6 +117,7 @@ Get seconds
 
 * Accumulator 
 * X Register 
+* Y Register 
 
 
 ## ds1501_get_time
@@ -159,6 +160,15 @@ Set Write bit (TE)
 * Accumulator 
 
 
+## ds1501_put_time
+
+***Input***
+
+* Accumulator : year 
+* X Register : month 
+* Y Register : year 
+
+
 ## ds1501_set_cristal_capacitance
 
 ***Description***
@@ -168,5 +178,33 @@ Set cristal capacitance.
 ***Input***
 
 * Accumulator : DS1501_CRISTAL_CAPACITANCE_12_5PF or DS1501_CRISTAL_CAPACITANCE_6PF
+
+
+## ds1501_set_date_alarm
+
+
+
+## ds1501_set_day_alarm
+
+
+
+## ds1501_set_hours_alarm
+
+
+
+## ds1501_set_minutes_alarm
+
+
+
+## ds1501_set_seconds_alarm
+
+
+
+## ds1501_unlock_te
+
+***Description***
+
+Disable Write bit (TE)
+
 
 

@@ -85,6 +85,8 @@ Get seconds
 Seconds 
 
 
+## long int ds1501_get_time();
+
 ***Description***
 
 Get time : hh mm ss
@@ -105,17 +107,41 @@ Set Write bit (TE)
 
 
 
+## void ds1501_put_time(unsigned char day, unsigned char month, unsigned char year )
 
+***Description***
+
+Set day, month, year
+
+
+
+## void ds1501_set_cristal_capacitance(unsigned char capacitance);
 
 ***Description***
 
 Set cristal capacitance.
 
-## void ds1501_set_cristal_capacitance(unsigned char capacitance);
+
+
+## ds1501_set_date_alarm(unsigned int date);
 
 
 
 
+
+## 
+
+
+
+
+
+## void ds1501_set_minutes_alarm(unsigned char minutes);
+
+
+
+
+
+## void ds1501_set_seconds_alarm(unsigned int seconds);
 
 
 
