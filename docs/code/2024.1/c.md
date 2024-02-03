@@ -137,6 +137,10 @@ Set cristal capacitance.
 
 ## void ds1501_set_minutes_alarm(unsigned char minutes);
 
+***Description***
+
+Set minutes alarm
+
 
 
 

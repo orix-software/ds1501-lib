@@ -196,7 +196,15 @@ Set cristal capacitance.
 
 
 
+## ds1501_set_month
+
+
+
 ## ds1501_set_seconds_alarm
+
+
+
+## ds1501_set_year
 
 
 

@@ -1,6 +1,7 @@
 .include "include/ds1501.inc"
 
 .export _ds1501_set_year
+.export ds1501_set_year
 
 .import ds1501_unlock_te
 .import ds1501_lock_te
@@ -8,6 +9,9 @@
 ; Modify a,x,y
 
 .proc _ds1501_set_year
+.endproc
+
+.proc ds1501_set_year
     ; Set write bit
 
     tay ; save
