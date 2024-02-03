@@ -1,4 +1,4 @@
-.include "include/ds1501.s"
+.include "include/ds1501.inc"
 
 .export _ds1501_set_year
 
@@ -20,11 +20,11 @@
     bcc     @setyear
 
     ;lda     DS1501_YEAR_REGISTER
-    jmp      _ds1501_lock_te
+    jmp     ds1501_lock_te
 
 @setyear:
     sty     DS1501_YEAR_REGISTER
     ;lda     DS1501_YEAR_REGISTER ; ???
-    jmp      ds1501_lock_te
+    jmp     ds1501_lock_te
 
 .endproc

@@ -1,11 +1,11 @@
-.include "include/ds1501.s"
+.include "include/ds1501.inc"
 
 .export ds1501_set_cristal_capacitance
 .export _ds1501_set_cristal_capacitance
 
 .proc _ds1501_set_cristal_capacitance
-    ;;@brief Set cristal capacitance.
     ;;@proto void          ds1501_set_cristal_capacitance(unsigned char capacitance);
+    ;;@brief Set cristal capacitance.
 .endproc
 
 .proc ds1501_set_cristal_capacitance

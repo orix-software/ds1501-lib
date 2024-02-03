@@ -1,9 +1,7 @@
-.include "include/ds1501.s"
+.include "include/ds1501.inc"
 
 .export _ds1501_get_date
 .export ds1501_get_date
-
-; Modify a,x,y
 
 .proc _ds1501_get_date
     ;;@proto unsigned char ds1501_get_date();

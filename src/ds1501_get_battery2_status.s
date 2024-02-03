@@ -1,4 +1,4 @@
-.include "include/ds1501.s"
+.include "include/ds1501.inc"
 
 .export _ds1501_get_battery2_status
 .export ds1501_get_battery2_status

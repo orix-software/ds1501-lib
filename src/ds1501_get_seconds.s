@@ -1,4 +1,4 @@
-.include "include/ds1501.s"
+.include "include/ds1501.inc"
 
 .export _ds1501_get_seconds
 
@@ -14,6 +14,7 @@
     ;;@brief Get seconds
     ;;@modifyA
     ;;@modifyX
+    ;;@modifyY
     ;;@returnA Seconds
     lda     DS1501_SECONDS_REGISTER
 

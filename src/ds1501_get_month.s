@@ -1,9 +1,7 @@
-.include "include/ds1501.s"
+.include "include/ds1501.inc"
 
 .export _ds1501_get_month
 .export ds1501_get_month
-
-; Modify a,x,y
 
 .proc _ds1501_get_month
     ;;@proto unsigned char ds1501_get_month();

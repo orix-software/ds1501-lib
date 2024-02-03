@@ -1,14 +1,14 @@
-.include "include/ds1501.s"
+.include "include/ds1501.inc"
 
 .export _ds1501_get_time
 .export ds1501_get_time
 
-; Return in A ss
-; return in X mm
-; return in Y hh
+.import ds1501_get_seconds
+.import ds1501_get_minutes
+.import ds1501_get_hours
 
-.proc _proto ds1501_get_time
-    ;;@long int      ds1501_get_time();
+.proc _ds1501_get_time
+    ;;@proto long int      ds1501_get_time();
     ;;@brief Get time : hh mm ss
 .endproc
 
@@ -25,7 +25,7 @@
     jsr     ds1501_get_minutes
     pha
     jsr     ds1501_get_hours
-    tax     ; X contaiuns jours
+    tax     ; X contains hours
     pla
     tay     ; Y contains Minutes
     pla

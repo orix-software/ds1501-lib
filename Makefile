@@ -1,10 +1,7 @@
 SOURCES8=$(wildcard src/*.s)
 OBJECTS8=$(SOURCES8:.s=.o)
 
-all: init $(SOURCES8) $(OBJECTS8) tools
-
-init:
-	@mkdir build/
+all: $(SOURCES8) $(OBJECTS8) tools
 
 $(OBJECTS8): $(SOURCES8)
 	ca65 -ttelestrat $(@:.o=.s) -o $@
